@@ -6,7 +6,7 @@ const os = require("os");
 const Readable = require("stream").Readable;
 const spawn = require("child_process").spawn;
 
-const progressRegex = /\[download\] *(.*) of (.*) at (.*) ETA (.*) */;
+const progressRegex = /\[download\] *(.*) of (.*)(?: at (.*) ETA (.*) *)?/;
 
 class YoutubeDlWrap
 {
